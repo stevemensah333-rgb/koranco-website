@@ -12,6 +12,8 @@ const backgroundImages = [
   "/assets/images/znwoT9yqd0qIIlVsLEnXZRi3zU.png",
 ] as const
 
+const serviceImagePositions = ["50% 42%", "50% 44%", "50% 48%", "50% 50%", "50% 42%"] as const
+
 function ServiceHeading() {
   return (
     <h2>
@@ -74,7 +76,7 @@ export function ServicesSection() {
         <div className={styles.stageCard}>
           {siteContent.services.stages.map((stage, index) => (
             <article className={`${styles.stage} ${index === activeIndex ? styles.active : ""}`} key={stage.title}>
-              <img alt="" src={stage.image} />
+              <img alt="" src={stage.image} style={{ objectPosition: serviceImagePositions[index] }} />
               <div className={styles.stageBody}>
                 <h3>{stage.title}</h3>
                 <p>{stage.description}</p>

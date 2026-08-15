@@ -26,7 +26,12 @@ export const metadata: Metadata = {
     description: siteContent.seo.description,
   },
   icons: {
-    icon: siteContent.seo.icon,
+    icon: [
+      { url: siteContent.seo.icon, type: "image/svg+xml" },
+      { url: siteContent.seo.icon32, sizes: "32x32", type: "image/png" },
+      { url: siteContent.seo.icon16, sizes: "16x16", type: "image/png" },
+    ],
+    apple: siteContent.seo.appleTouchIcon,
   },
 }
 
