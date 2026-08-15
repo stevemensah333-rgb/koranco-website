@@ -1,9 +1,9 @@
 import { siteContent } from "../../content/siteContent"
 import styles from "./ContactSection.module.css"
 
-function LinkColumn({ title, links }: { title: string; links: readonly string[] }) {
+function LinkColumn({ title, links, className = "" }: { title: string; links: readonly string[]; className?: string }) {
   return (
-    <div className={styles.column}>
+    <div className={`${styles.column} ${className}`.trim()}>
       <h3>{title}</h3>
       <ul>
         {links.map((link) => <li key={link}><a href="#">{link}</a></li>)}
@@ -20,7 +20,7 @@ export function ContactSection() {
         <p className={styles.eyebrow}>{content.eyebrow}</p>
         <h2>{content.title}</h2>
         <a className={styles.cta} href="#contact">
-          {content.ctaLabel}
+          <span>{content.ctaLabel}</span>
           <span aria-hidden="true">→</span>
         </a>
       </div>
@@ -37,6 +37,7 @@ export function ContactSection() {
           <LinkColumn title="Social Handle" links={content.socials} />
         </div>
         <div className={styles.copyright}>{content.copyright}</div>
+        <div className={styles.madeInFramer} aria-label="Made in Framer"><span aria-hidden="true">◢</span> Made in Framer</div>
       </footer>
     </section>
   )

@@ -30,7 +30,7 @@ export const siteContent = {
     eyebrow: "Join us",
     title: "Ready to transform your farming with smart technology?",
     ctaLabel: "Ger started",
-    backgroundImage: "/assets/images/w8BxcgOTdrnm1oAx9APIWHAr7Y.png",
+    backgroundImage: "/assets/images/JvFZfXaAfe9KTLVPyGYPaXnna0.png",
     statement: "Transforming agriculture through smart, sustainable innovation.",
     email: "info@korancofarms.com",
     quickLinks: ["Home", "About us", "Our solutions", "Our services"],

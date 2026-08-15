@@ -1,8 +1,7 @@
 .contact {
   position: relative;
-  min-height: 980px;
   overflow: hidden;
-  padding: 84px 30px 60px;
+  padding: 80px 30px 60px;
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -22,89 +21,112 @@
 }
 
 .ctaBlock {
-  max-width: 980px;
-  margin: 0 auto;
+  display: flex;
+  min-height: 324.40625px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
   text-align: center;
 }
 
 .eyebrow {
   margin: 0;
   font-size: 20px;
-  line-height: 1.6;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 32px;
 }
 
 .ctaBlock h2 {
-  max-width: 760px;
-  margin: 22px auto 0;
+  max-width: 738px;
+  margin: -20px auto 0;
   font-size: 52px;
-  font-weight: 400;
-  letter-spacing: -.065em;
-  line-height: 1.08;
+  font-weight: 1000;
+  letter-spacing: -.06em;
+  line-height: 1.2;
 }
 
 .cta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 25px;
-  margin-top: 30px;
-  padding: 13px 21px;
-  border-radius: 999px;
+  justify-content: center;
+  gap: 10px;
+  width: 152.484375px;
+  height: 43.59375px;
+  margin-top: 64px;
+  box-sizing: border-box;
+  border-radius: 42px;
   background: #e7f352;
-  color: #16353a;
+  color: #04303b;
   font-size: 16px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 25.6px;
   text-decoration: none;
 }
 
-.cta span {
-  font-size: 23px;
+.cta span:last-child {
+  font-size: 19px;
   line-height: 1;
 }
 
 .footerCard {
-  max-width: 1380px;
-  min-height: 408px;
-  margin: 80px auto 0;
-  padding: 52px 48px 28px;
+  position: relative;
+  height: 410.375px;
+  margin: 0 auto;
+  padding: 88px 48px 28px;
+  box-sizing: border-box;
   border-radius: 22px;
   background: #fff;
-  color: #16353a;
+  color: #04303b;
 }
 
 .footerMain {
   display: grid;
-  grid-template-columns: 1.65fr 1fr 1fr .7fr;
-  gap: 50px;
+  grid-template-columns: minmax(0, 568.33px) 270.84px 180.83px 120px;
+  gap: 48px;
 }
 
 .brandColumn img {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 135px;
+  height: 44px;
   object-fit: contain;
 }
 
 .brandColumn p {
-  max-width: 330px;
-  margin: 22px 0 18px;
-  font-size: 20px;
-  line-height: 1.45;
+  max-width: 344px;
+  margin: 16px 0 16px;
+  font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 28.8px;
 }
 
 .email {
+  display: block;
   color: #3b3939;
   font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 28.8px;
   text-decoration: none;
 }
 
 .column h3 {
-  margin: 0 0 21px;
-  font-size: 20px;
-  font-weight: 400;
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 28.8px;
 }
 
 .column ul {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -113,84 +135,160 @@
 .column a {
   color: #3b3939;
   font-size: 18px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 28.8px;
   text-decoration: none;
 }
 
 .copyright {
-  margin-top: 55px;
-  padding-top: 15px;
+  margin-top: 65px;
+  padding-top: 12px;
   border-top: 1px solid #b7c5c2;
   color: #3b3939;
   font-size: 16px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+  line-height: 25.6px;
   text-align: center;
+}
+
+.madeInFramer {
+  position: absolute;
+  right: -10px;
+  bottom: -1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #d8d8d8;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.madeInFramer span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (max-width: 1199.98px) {
+  .ctaBlock {
+    min-height: 266px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .ctaBlock h2 {
+    max-width: 550px;
+    margin-top: -20px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .cta {
+    margin-top: 64px;
+  }
+
+  .footerCard {
+  height: 547.96875px;
+  padding: 76px 36px 28px;
+  }
+
+  .footerMain {
+    grid-template-columns: minmax(0, 344px) minmax(0, 1fr) 120px;
+    gap: 0 48px;
+  }
+
+  .brandColumn {
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+  }
+
+  .copyright {
+    margin-top: 65px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .contact {
-    min-height: 1320px;
-    padding: 36px 20px 42px;
+    padding: 60px 20px 60px;
+  }
+
+  .ctaBlock {
+    min-height: 295.203125px;
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 
   .ctaBlock h2 {
+    width: 100%;
     max-width: 350px;
-    margin-top: 15px;
-    font-size: 40px;
-    line-height: 1.08;
+    margin-top: -24px;
+    font-size: 36px;
+    line-height: 1.2;
   }
 
   .cta {
-    margin-top: 28px;
+    margin-top: 64px;
   }
 
   .footerCard {
-    min-height: 880px;
-    margin-top: 50px;
-    padding: 30px 20px 24px;
+    height: 735.546875px;
+    margin: 0;
+    padding: 64px 20px 0;
     border-radius: 16px;
   }
 
   .footerMain {
     grid-template-columns: 1fr 1fr;
-    gap: 35px 25px;
+    row-gap: 32px;
+    column-gap: 25px;
   }
 
   .brandColumn {
     grid-column: 1 / -1;
+    margin-bottom: 0;
+  }
+
+  .email {
+    display: block;
   }
 
   .brandColumn img {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto 22px;
+    margin: 0 0 16px;
   }
 
   .brandColumn p {
     max-width: none;
-    margin: 0 0 18px;
-    font-size: 20px;
-    line-height: 1.45;
+    margin: 0 0 16px;
   }
 
   .column h3 {
-    margin-bottom: 18px;
-    font-size: 20px;
+    margin-bottom: 16px;
   }
 
   .column ul {
-    gap: 14px;
-  }
-
-  .column a,
-  .email {
-    font-size: 18px;
+    gap: 12px;
   }
 
   .footerMain .column:last-child {
     grid-column: 1 / -1;
+    margin-top: -16px;
   }
 
   .copyright {
-    margin-top: 42px;
-    font-size: 14px;
+    margin-top: 22px;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .madeInFramer {
+    right: 0;
+    bottom: -1px;
   }
 }
