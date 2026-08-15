@@ -33,7 +33,7 @@
 .cta {
   display: inline-flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
   width: 150px;
   height: 44px;
   margin-top: 70px;
@@ -43,6 +43,7 @@
   color: #102d35;
   font-size: 17px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .cta span {
@@ -65,9 +66,9 @@
   isolation: isolate;
 }
 
-.card1 { left: 60px; bottom: 126.908px; height: 307.184px; transform: translateY(0); }
-.card2 { left: calc(50% - 212px); bottom: 136.5px; height: 370px; transform: translateY(0); }
-.card3 { right: 60px; bottom: 163.288px; height: 545.424px; transform: translateY(0); }
+.card1 { left: 60px; bottom: 119px; height: 315.47px; transform: translateY(0); }
+.card2 { left: calc(50% - 212px); bottom: 119px; height: 387.875px; transform: translateY(0); }
+.card3 { right: 60px; bottom: 119px; height: 590.087px; transform: translateY(0); }
 
 .card img,
 .overlay {

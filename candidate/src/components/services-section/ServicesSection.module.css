@@ -54,7 +54,7 @@
   font-size: 52px;
   font-weight: 400;
   letter-spacing: -.065em;
-  line-height: 1.04;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -64,18 +64,18 @@
   left: 50%;
   z-index: 2;
   width: min(656px, calc(100vw - 64px));
-  height: 620px;
+  height: 621.187px;
   overflow: hidden;
   border-radius: 22px;
   background: #e3e4d4;
-  padding: 12px;
+  padding: 12px 12px 24px;
   color: #0c3540;
   transform: translateX(-50%);
 }
 
 .stage {
   position: absolute;
-  inset: 12px;
+  inset: 12px 12px 24px;
   overflow: hidden;
   border-radius: 14px;
   opacity: 0;
@@ -90,32 +90,32 @@
 .stage img {
   display: block;
   width: 100%;
-  height: 440px;
+  height: 438.781px;
   object-fit: cover;
   border-radius: 12px;
 }
 
 .stageBody {
-  min-height: 156px;
-  padding: 22px 34px 30px;
+  min-height: 0;
+  padding: 0;
   background: #e3e4d4;
   text-align: center;
 }
 
 .stageBody h3 {
   margin: 0;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 400;
   letter-spacing: -.055em;
   line-height: 1.2;
 }
 
 .stageBody p {
-  max-width: 440px;
-  margin: 23px auto 0;
+  max-width: 400px;
+  margin: 20px auto 0;
   color: #04303b;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .stageMeta {
@@ -152,15 +152,15 @@
   .stageCard {
     top: 245px;
     width: min(585px, calc(100vw - 48px));
-    height: 620px;
+    height: 506px;
   }
 
   .stage {
-    inset: 12px;
+    inset: 12px 12px 24px;
   }
 
   .stage img {
-    height: 440px;
+    height: 330px;
   }
 
   .stageMeta {
@@ -172,8 +172,9 @@
 @media (max-width: 767.98px) {
   .services {
     min-height: auto;
-    padding: 60px 0 0;
-    background: #20292d;
+    padding: 60px 0 30px;
+    background: #e3e4d4;
+    color: #04303b;
   }
 
   .desktopSticky {
@@ -182,7 +183,13 @@
 
   .mobileIntro {
     display: block;
+    color: #04303b;
     padding: 0 20px 42px;
+  }
+
+  .mobileIntro .eyebrow,
+  .mobileIntro h2 {
+    color: #04303b;
   }
 
   .mobileIntro h2 {
@@ -197,39 +204,44 @@
   }
 
   .mobileStage {
-    margin: 0 20px 42.3px;
-    padding: 12px;
+    margin: 0 20px 24px;
+    padding: 12px 12px 24px;
     border-radius: 16px;
-    background: #e3e4d4;
+    background: rgba(227, 228, 212, .42);
+    border: 0;
   }
 
   .mobileStage img {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 1.553;
+    aspect-ratio: 1.55423;
     border-radius: 12px;
     object-fit: cover;
   }
 
   .mobileStageBody {
-    padding: 22px 0 18px;
+    padding: 24px 0 0;
   }
 
   .mobileStageBody h3 {
     margin: 0;
     color: #04303b;
     font-size: 26px;
-    font-weight: 500;
-    letter-spacing: -.055em;
+    font-weight: 1000;
+    letter-spacing: -.06em;
     line-height: 1.2;
   }
 
   .mobileStageBody p {
-    margin: 16px 0 0;
+    margin: 14px 0 0;
     color: #04303b;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
+  }
+
+  .mobileStage:last-child {
+    margin-bottom: 0;
   }
 
   .mobileStageBody span {
