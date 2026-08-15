@@ -10,9 +10,9 @@
     <meta name="description" content="Koranco Farms delivers smart, sustainable farming solutions that improve productivity and strengthen agricultural growth.">
     <meta name="framer-search-index" content="https://framerusercontent.com/sites/56D4XHW8h75BsPHv4vcDGL/searchIndex-sW7pMw8QgawO.json">
     <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/56D4XHW8h75BsPHv4vcDGL/searchIndex-uXjtQ8ljbn7j.json">
-    <link href="https://framerusercontent.com/images/tUtWFipl6qdHjA2F5yK6HmnJM3U.svg" rel="icon" media="(prefers-color-scheme: light)">
-    <link href="https://framerusercontent.com/images/tUtWFipl6qdHjA2F5yK6HmnJM3U.svg" rel="icon" media="(prefers-color-scheme: dark)">
-    <link rel="apple-touch-icon" href="https://framerusercontent.com/images/J33JpKDxcoZBzWmjPItk3MfbXu8.png">
+    <link href="../images/koranco-farms-favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="../images/koranco-farms-favicon.ico" rel="alternate icon">
+    <link rel="apple-touch-icon" href="../images/koranco-farms-apple-touch-icon.png">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Farmio">
