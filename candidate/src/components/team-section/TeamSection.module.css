@@ -42,6 +42,11 @@
   position: relative;
 }
 
+.media {
+  position: relative;
+  width: 100%;
+}
+
 .portrait {
   display: block;
   width: 100%;
@@ -52,9 +57,12 @@
 }
 
 .details {
-  position: relative;
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  left: 14px;
   z-index: 3;
-  margin: -64px 14px 0;
+  margin: 0;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -98,7 +106,10 @@
   }
 
   .details {
-    margin-top: -62px;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    margin-top: 0;
   }
 
   .member:nth-child(3) .portrait {
@@ -107,7 +118,8 @@
   }
 
   .member:nth-child(3) .details {
-    margin-top: -47.5px;
+    bottom: 12px;
+    margin-top: 0;
   }
 
   .details h3 {
@@ -157,11 +169,15 @@
   }
 
   .details {
-    margin: -45.65px 14px 0;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    margin: 0;
   }
 
   .member:first-child .details {
-    margin-top: -59.6px;
+    bottom: 12px;
+    margin-top: 0;
   }
 
   .details h3 {

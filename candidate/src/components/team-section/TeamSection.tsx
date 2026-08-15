@@ -12,10 +12,12 @@ export function TeamSection() {
       <div className={styles.members}>
         {siteContent.team.members.map((member) => (
           <article className={styles.member} key={member.name}>
-            <img alt={member.alt} className={styles.portrait} loading="lazy" src={member.image} />
-            <div className={styles.details}>
-              <h3>{member.name}</h3>
-              <p>{member.role}</p>
+            <div className={styles.media}>
+              <img alt={member.alt} className={styles.portrait} loading="lazy" src={member.image} />
+              <div className={styles.details}>
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </div>
             </div>
           </article>
         ))}
