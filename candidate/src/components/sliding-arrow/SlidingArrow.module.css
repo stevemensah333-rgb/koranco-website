@@ -1,0 +1,36 @@
+.window {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 15px;
+  flex: 0 0 16px;
+  overflow: hidden;
+}
+
+.track {
+  display: block;
+  position: absolute;
+  inset: 0;
+  transition: transform 400ms var(--motion-linear);
+}
+
+.glyph {
+  position: absolute;
+  top: 0;
+  width: 16px;
+  height: 15px;
+}
+
+.incoming {
+  left: -20px;
+  color: var(--color-sage);
+}
+
+.current {
+  left: 0;
+  color: var(--color-ink);
+}
+
+:global(a:hover) .track {
+  transform: translateX(20px);
+}
