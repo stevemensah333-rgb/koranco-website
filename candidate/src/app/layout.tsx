@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 
+import { siteContent } from "../content/siteContent"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Farmio",
-  description:
-    "Koranco Farms delivers smart, sustainable farming solutions that improve productivity and strengthen agricultural growth.",
+  title: siteContent.seo.title,
+  description: siteContent.seo.description,
   icons: {
-    icon: "/assets/images/tUtWFipl6qdHjA2F5yK6HmnJM3U.svg",
+    icon: siteContent.seo.icon,
   },
 }
 

@@ -1,4 +1,5 @@
 import { SlidingArrow } from "../sliding-arrow/SlidingArrow"
+import { siteContent } from "../../content/siteContent"
 import styles from "./Hero.module.css"
 
 export function Hero({ legacyBaseUrl }: { legacyBaseUrl: string }) {
@@ -11,18 +12,16 @@ export function Hero({ legacyBaseUrl }: { legacyBaseUrl: string }) {
           alt=""
           className={styles.backgroundImage}
           height="1600"
-          src="/assets/images/w8BxcgOTdrnm1oAx9APIWHAr7Y.png"
+          src={siteContent.hero.backgroundImage}
           width="2880"
         />
       </div>
       <div aria-hidden="true" className={styles.overlay} />
 
       <div className={styles.content}>
-        <div className={styles.titleGroup}>
-          <div className={styles.eyebrow}>Smart farming solutions</div>
-          <h1 className={styles.title}>
-            Innovative Technology for Agricultural Growth
-          </h1>
+          <div className={styles.titleGroup}>
+          <div className={styles.eyebrow}>{siteContent.hero.eyebrow}</div>
+          <h1 className={styles.title}>{siteContent.hero.title}</h1>
         </div>
 
         <div className={styles.lowerRegion}>
@@ -37,25 +36,20 @@ export function Hero({ legacyBaseUrl }: { legacyBaseUrl: string }) {
               preload="auto"
             >
               <source
-                src="/assets/misc/Np45wly46PBKqCGM0tXpdJqVAo.mp4"
+                src={siteContent.hero.videoSource}
                 type="video/mp4"
               />
             </video>
             <div className={styles.videoText}>
-              <p className={styles.videoTitle}>Farming in Motion</p>
-              <p className={styles.videoDescription}>
-                Real-time insights driving smarter decisions.
-              </p>
+              <p className={styles.videoTitle}>{siteContent.hero.videoTitle}</p>
+              <p className={styles.videoDescription}>{siteContent.hero.videoDescription}</p>
             </div>
           </article>
 
           <div className={styles.descriptionGroup} data-testid="hero-description">
-            <p className={styles.description}>
-              Koranco Farms delivers smart farming solutions to improve productivity
-              and promote sustainable agricultural growth.
-            </p>
+            <p className={styles.description}>{siteContent.hero.description}</p>
             <a className={styles.primaryButton} href={contactHref}>
-              <span>Ger started</span>
+              <span>{siteContent.hero.ctaLabel}</span>
               <SlidingArrow />
             </a>
           </div>

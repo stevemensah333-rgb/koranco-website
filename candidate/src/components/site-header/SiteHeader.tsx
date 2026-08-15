@@ -3,15 +3,10 @@
 import { useEffect, useRef, useState } from "react"
 
 import { SlidingArrow } from "../sliding-arrow/SlidingArrow"
+import { siteContent } from "../../content/siteContent"
 import styles from "./SiteHeader.module.css"
 
-const primaryLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About us" },
-  { href: "#service", label: "Services" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#testimonial", label: "Testimonials" },
-]
+const primaryLinks = siteContent.navigation.primary
 
 function resolveLegacyHref(baseUrl: string, href: string) {
   return href === "#home" ? href : `${baseUrl.replace(/\/$/, "")}/${href}`
@@ -41,9 +36,13 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
         className={`${styles.panel} ${isOpen ? styles.panelOpen : ""}`}
       >
         <div className={styles.headerRow}>
-          <a aria-label="Koranco Farms home" className={styles.logoLink} href="#home">
+          <a
+            aria-label={siteContent.brand.homeAriaLabel}
+            className={styles.logoLink}
+            href="#home"
+          >
             <img
-              alt="Koranco Farms logo"
+              alt={siteContent.brand.logoAlt}
               className={styles.logo}
               height="695"
               src="/assets/images/wuQr8zED6pERTtGdsItynbUjr0.jpg"
@@ -64,7 +63,7 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
           </div>
 
           <a className={styles.contactButton} href={contactHref}>
-            <span>Contact us</span>
+            <span>{siteContent.navigation.contactLabel}</span>
             <SlidingArrow />
           </a>
 
@@ -83,7 +82,13 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
         </div>
 
         <div className={styles.mobileMenu} id="responsive-navigation">
-          {[...primaryLinks, { href: "/contact-us", label: "Contact Us" }].map(
+          {[
+            ...primaryLinks,
+            {
+              href: "/contact-us",
+              label: siteContent.navigation.mobileContactLabel,
+            },
+          ].map(
             (link) => (
               <a
                 className={styles.mobileLink}

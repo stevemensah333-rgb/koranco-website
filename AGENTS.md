@@ -103,6 +103,12 @@ Prefer deterministic browser automation for repeatable screenshots, supplemented
 by manual review for timing, drag, scroll feel, and visual artifacts. Do not
 approve equivalence from DOM snapshots alone.
 
+## Content updates
+
+Explicit future content-update tasks are permitted. Approved updates to text, images, logos, contact details, links, and SEO metadata must preserve the established visual system, responsive composition, interaction model, accessibility behavior, and public URL structure unless the user explicitly requests a design or product change. Do not reject a legitimate content update merely because visual fidelity is protected; instead, keep the change within the documented content boundary and verify any layout-sensitive result.
+
+Use `docs/content-guide.md` for the current editable content locations, recommended content footprints, image replacement rules, factual-review requirements, and content/animation coupling. Content centralization must remain a small typed data layer, not a schema-driven page builder. Keep one-off editorial composition local when that is clearer and safer.
+
 ## Safe change discipline
 
 Generally safe without redesign approval:
