@@ -31,7 +31,7 @@
 
 .desktopIntro {
   position: absolute;
-  top: 84px;
+  top: 80px;
   right: 24px;
   left: 24px;
   z-index: 1;
@@ -48,8 +48,8 @@
 
 .desktopIntro h2,
 .mobileIntro h2 {
-  max-width: 630px;
-  margin: 14px auto 0;
+  max-width: 625px;
+  margin: 10px auto 0;
   color: #f8f8f2;
   font-size: 52px;
   font-weight: 400;
@@ -60,13 +60,13 @@
 
 .stageCard {
   position: absolute;
-  top: 300px;
+  top: 299px;
   left: 50%;
   z-index: 2;
-  width: min(656px, calc(100vw - 64px));
+  width: min(655px, calc(100vw - 64px));
   height: 621.187px;
   overflow: hidden;
-  border-radius: 22px;
+  border-radius: 20px;
   background: #e3e4d4;
   padding: 12px 12px 24px;
   color: #0c3540;
@@ -141,18 +141,20 @@
   }
 
   .desktopIntro {
-    top: 70px;
+    top: 60px;
   }
 
   .desktopIntro h2 {
-    max-width: 561px;
-    font-size: 44px;
+    max-width: 625px;
+    margin-top: 10px;
+    font-size: 36px;
   }
 
   .stageCard {
-    top: 245px;
+    top: 229px;
     width: min(585px, calc(100vw - 48px));
     height: 506px;
+    border-radius: 12px;
   }
 
   .stage {
@@ -206,8 +208,8 @@
   .mobileStage {
     margin: 0 20px 24px;
     padding: 12px 12px 24px;
-    border-radius: 16px;
-    background: rgba(227, 228, 212, .42);
+    border-radius: 20px;
+    background: #e3e4d4;
     border: 0;
   }
 
