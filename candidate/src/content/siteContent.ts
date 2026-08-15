@@ -26,6 +26,32 @@ export const siteContent = {
       { value: "$12B+", label: "Agricultural product" },
     ],
   },
+  products: {
+    eyebrow: "Our solutions",
+    title: "One platform complete agriculture solutions",
+    ctaLabel: "Contact us",
+    image: "/assets/images/zNmcQyo07DxCT3RJxPq6gaYORh0.png",
+    cards: [
+      {
+        title: "Precision farming solutions",
+        description: "Use advanced technology to monitor crops and maximize yield with confidence.",
+        tags: ["Data insights", "Smart Monitoring"],
+        image: "/assets/images/zNmcQyo07DxCT3RJxPq6gaYORh0.png",
+      },
+      {
+        title: "Farm management system",
+        description: "Plan, track, and manage every farming activity effortlessly from one simple digital platform.",
+        tags: ["Time Efficiency", "Digital Control"],
+        image: "/assets/images/3jG5Dq23m4D3GRcwL5L9qpH3pgo.png",
+      },
+      {
+        title: "Sustainable agriculture services",
+        description: "Improve soil health, save resources, and grow responsibly with eco-friendly practices.",
+        tags: ["Sustainability", "Smart Practices"],
+        image: "/assets/images/JAGzNWPJfggBCr1mBmpRz68ZHug.png",
+      },
+    ],
+  },
   services: {
     eyebrow: "Our services",
     title: "Advanced Services for Modern Agriculture",

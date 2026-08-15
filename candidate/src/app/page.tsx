@@ -1,5 +1,6 @@
 import { Hero } from "../components/hero/Hero"
 import { AboutSection } from "../components/about-section/AboutSection"
+import { ProductsSection } from "../components/products-section/ProductsSection"
 import { ServicesSection } from "../components/services-section/ServicesSection"
 import { SiteHeader } from "../components/site-header/SiteHeader"
 
@@ -12,6 +13,7 @@ export default function HomePage() {
       <SiteHeader legacyBaseUrl={legacyBaseUrl} />
       <Hero legacyBaseUrl={legacyBaseUrl} />
       <AboutSection />
+      <ProductsSection />
       <ServicesSection />
     </main>
   )
