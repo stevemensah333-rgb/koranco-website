@@ -37,7 +37,6 @@ export function ContactSection() {
           <LinkColumn title="Social Handle" links={content.socials} />
         </div>
         <div className={styles.copyright}>{content.copyright}</div>
-        <div className={styles.madeInFramer} aria-label="Made in Framer"><span aria-hidden="true">◢</span> Made in Framer</div>
       </footer>
     </section>
   )

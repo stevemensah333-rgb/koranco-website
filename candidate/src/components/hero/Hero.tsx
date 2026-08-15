@@ -2,9 +2,7 @@ import { SlidingArrow } from "../sliding-arrow/SlidingArrow"
 import { siteContent } from "../../content/siteContent"
 import styles from "./Hero.module.css"
 
-export function Hero({ legacyBaseUrl }: { legacyBaseUrl: string }) {
-  const contactHref = `${legacyBaseUrl.replace(/\/$/, "")}/contact-us`
-
+export function Hero() {
   return (
     <section className={styles.hero} id="home">
       <div aria-hidden="true" className={styles.background}>
@@ -48,7 +46,7 @@ export function Hero({ legacyBaseUrl }: { legacyBaseUrl: string }) {
 
           <div className={styles.descriptionGroup} data-testid="hero-description">
             <p className={styles.description}>{siteContent.hero.description}</p>
-            <a className={styles.primaryButton} href={contactHref}>
+            <a className={styles.primaryButton} href="#contact">
               <span>{siteContent.hero.ctaLabel}</span>
               <SlidingArrow />
             </a>

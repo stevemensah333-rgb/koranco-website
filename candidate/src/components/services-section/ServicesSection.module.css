@@ -1,7 +1,7 @@
 .services {
   position: relative;
   min-height: 5000px;
-  background: #20292d;
+  background: #e3e4d4;
   color: #f8f8f2;
 }
 
@@ -20,9 +20,21 @@
 }
 
 .backdrop {
+  overflow: hidden;
+  filter: saturate(.78);
+}
+
+.backdropLayer {
+  position: absolute;
+  inset: 0;
   background-position: center;
   background-size: cover;
-  filter: saturate(.78);
+  opacity: 0;
+  transition: opacity .45s ease;
+}
+
+.backdropLayerActive {
+  opacity: 1;
 }
 
 .scrim {
@@ -31,7 +43,7 @@
 
 .desktopIntro {
   position: absolute;
-  top: 80px;
+  top: 120px;
   right: 24px;
   left: 24px;
   z-index: 1;
@@ -41,21 +53,26 @@
 .eyebrow {
   margin: 0;
   color: #f8f8f2;
-  font-size: 18px;
-  line-height: 1.78;
+  font-size: 20px;
+  line-height: 32px;
   text-align: center;
 }
 
 .desktopIntro h2,
 .mobileIntro h2 {
   max-width: 625px;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   color: #f8f8f2;
   font-size: 52px;
-  font-weight: 400;
-  letter-spacing: -.065em;
+  font-weight: 1000;
+  letter-spacing: -.06em;
   line-height: 1.2;
   text-align: center;
+}
+
+.desktopIntro h2 span,
+.mobileIntro h2 span {
+  display: inline-block;
 }
 
 .stageCard {
@@ -97,24 +114,26 @@
 
 .stageBody {
   min-height: 0;
-  padding: 0;
+  padding: 24px 0 0;
   background: #e3e4d4;
   text-align: center;
 }
 
 .stageBody h3 {
   margin: 0;
+  color: #04303b;
   font-size: 32px;
-  font-weight: 400;
-  letter-spacing: -.055em;
+  font-weight: 1000;
+  letter-spacing: -.06em;
   line-height: 1.2;
 }
 
 .stageBody p {
   max-width: 400px;
   margin: 20px auto 0;
-  color: #04303b;
+  color: #3b3939;
   font-size: 20px;
+  letter-spacing: -.02em;
   line-height: 1.6;
 }
 
@@ -186,7 +205,7 @@
   .mobileIntro {
     display: block;
     color: #04303b;
-    padding: 0 20px 42px;
+    padding: 0 20px 40px;
   }
 
   .mobileIntro .eyebrow,
@@ -196,7 +215,7 @@
 
   .mobileIntro h2 {
     max-width: 350px;
-    margin-top: 14px;
+    margin-top: 16px;
     font-size: 36px;
     line-height: 1.2;
   }
@@ -223,8 +242,9 @@
   }
 
   .mobileStageBody {
-    padding: 24px 0 0;
-  }
+  padding: 24px 0 0;
+  text-align: center;
+}
 
   .mobileStageBody h3 {
     margin: 0;
@@ -237,8 +257,9 @@
 
   .mobileStageBody p {
     margin: 14px 0 0;
-    color: #04303b;
+    color: #3b3939;
     font-size: 20px;
+    letter-spacing: -.02em;
     line-height: 1.6;
   }
 

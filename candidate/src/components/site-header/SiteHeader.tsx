@@ -8,15 +8,9 @@ import styles from "./SiteHeader.module.css"
 
 const primaryLinks = siteContent.navigation.primary
 
-function resolveLegacyHref(baseUrl: string, href: string) {
-  return href === "#home" ? href : `${baseUrl.replace(/\/$/, "")}/${href}`
-}
-
-export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
+export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false)
   const transitionTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const contactHref = `${legacyBaseUrl.replace(/\/$/, "")}/contact-us`
-
   useEffect(
     () => () => {
       if (transitionTimer.current) clearTimeout(transitionTimer.current)
@@ -54,7 +48,7 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
             {primaryLinks.map((link) => (
               <a
                 className={styles.desktopLink}
-                href={resolveLegacyHref(legacyBaseUrl, link.href)}
+                href={link.href}
                 key={link.href}
               >
                 {link.label}
@@ -62,7 +56,7 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
             ))}
           </div>
 
-          <a className={styles.contactButton} href={contactHref}>
+          <a className={styles.contactButton} href="#contact">
             <span>{siteContent.navigation.contactLabel}</span>
             <SlidingArrow />
           </a>
@@ -85,18 +79,14 @@ export function SiteHeader({ legacyBaseUrl }: { legacyBaseUrl: string }) {
           {[
             ...primaryLinks,
             {
-              href: "/contact-us",
+              href: "#contact",
               label: siteContent.navigation.mobileContactLabel,
             },
           ].map(
             (link) => (
               <a
                 className={styles.mobileLink}
-                href={
-                  link.href === "/contact-us"
-                    ? contactHref
-                    : resolveLegacyHref(legacyBaseUrl, link.href)
-                }
+                href={link.href}
                 key={link.href}
                 onClick={() => queueMenuState(false)}
               >
