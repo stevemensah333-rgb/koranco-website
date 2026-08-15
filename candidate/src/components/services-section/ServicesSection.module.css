@@ -1,16 +1,20 @@
 .services {
   position: relative;
-  min-height: 5000px;
+  height: 500vh;
+  overflow: clip;
   background: #e3e4d4;
-  color: #f8f8f2;
+  color: #fff;
 }
 
 .desktopSticky {
   position: sticky;
-  top: 0;
+  top: 40px;
+  display: flex;
+  width: 100%;
   height: 100vh;
-  min-height: 760px;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .backdrop,
@@ -21,7 +25,6 @@
 
 .backdrop {
   overflow: hidden;
-  filter: saturate(.78);
 }
 
 .backdropLayer {
@@ -38,36 +41,58 @@
 }
 
 .scrim {
-  background: rgba(7, 16, 18, .72);
+  background: rgba(0, 0, 0, .7);
+}
+
+.desktopContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+  padding: 80px 30px;
 }
 
 .desktopIntro {
-  position: absolute;
-  top: 120px;
-  right: 24px;
-  left: 24px;
-  z-index: 1;
+  display: flex;
+  width: 100%;
+  max-width: 625px;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   text-align: center;
 }
 
+.desktopIntroCompact {
+  gap: 10px;
+}
+
 .eyebrow {
+  width: max-content;
   margin: 0;
-  color: #f8f8f2;
+  color: #fff;
   font-size: 20px;
+  letter-spacing: -.02em;
   line-height: 32px;
   text-align: center;
 }
 
 .desktopIntro h2,
 .mobileIntro h2 {
+  width: 100%;
   max-width: 625px;
-  margin: 20px auto 0;
-  color: #f8f8f2;
+  margin: 0;
+  color: #fff;
   font-size: 52px;
   font-weight: 1000;
   letter-spacing: -.06em;
   line-height: 1.2;
   text-align: center;
+  text-wrap: balance;
 }
 
 .desktopIntro h2 span,
@@ -75,25 +100,36 @@
   display: inline-block;
 }
 
+.stagePresentation {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 655px;
+  height: 1px;
+  min-height: 0;
+  flex: 1 0 0;
+  align-items: flex-end;
+}
+
 .stageCard {
-  position: absolute;
-  top: 299px;
-  left: 50%;
-  z-index: 2;
-  width: min(655px, calc(100vw - 64px));
-  height: 621.187px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 20px;
   background: #e3e4d4;
   padding: 12px 12px 24px;
-  color: #0c3540;
-  transform: translateX(-50%);
+  color: #04303b;
 }
 
 .stage {
   position: absolute;
   inset: 12px 12px 24px;
+  display: flex;
+  min-height: 0;
   overflow: hidden;
+  flex-direction: column;
+  gap: 24px;
   border-radius: 20px;
   opacity: 0;
   pointer-events: none;
@@ -107,47 +143,67 @@
 .stage img {
   display: block;
   width: 100%;
-  height: 193px;
-  object-fit: cover;
-  object-position: 50% 52%;
+  height: auto;
+  min-height: 0;
+  flex: 1 1 0;
   border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .stageBody {
+  display: flex;
   min-height: 0;
-  padding: 24px 0 0;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   background: #e3e4d4;
   text-align: center;
 }
 
 .stageBody h3 {
+  width: 100%;
   margin: 0;
   color: #04303b;
   font-size: 32px;
   font-weight: 1000;
   letter-spacing: -.06em;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 .stageBody p {
+  width: 100%;
   max-width: 400px;
-  margin: 20px auto 0;
-  color: #3b3939;
+  margin: 0;
+  color: #656565;
   font-size: 20px;
   letter-spacing: -.02em;
   line-height: 1.6;
+  text-wrap: balance;
+}
+
+.stageWideCopy .stageBody p {
+  max-width: 552px;
 }
 
 .stageMeta {
   position: absolute;
-  right: max(48px, calc((100vw - 1320px) / 2));
-  bottom: 44px;
+  right: -178px;
+  bottom: 0;
   z-index: 3;
-  display: grid;
-  gap: 22px;
-  color: #f8f8f2;
-  font-size: 18px;
-  line-height: 1.78;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: -.02em;
+  line-height: 32px;
+  white-space: nowrap;
 }
 
 .mobileIntro,
@@ -156,54 +212,80 @@
 }
 
 @media (max-width: 1199.98px) {
-  .services {
-    min-height: 4500px;
+  .desktopContent {
+    width: 100%;
+    height: min-content;
+    gap: 40px;
+    padding: 0 30px;
   }
 
-  .desktopIntro {
-    top: 60px;
+  .desktopIntro,
+  .desktopIntroCompact {
+    gap: 10px;
   }
 
   .desktopIntro h2 {
     max-width: 625px;
-    margin-top: 10px;
     font-size: 36px;
   }
 
+  .stagePresentation {
+    width: min(585px, calc(100vw - 60px));
+    max-width: 585px;
+    height: min-content;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
   .stageCard {
-    top: 229px;
-    width: min(585px, calc(100vw - 48px));
+    width: 100%;
     height: 506px;
+    flex: none;
     border-radius: 12px;
   }
 
+  .stageCardCompact {
+    height: 474px;
+  }
+
   .stage {
-    inset: 12px 12px 24px;
     border-radius: 12px;
   }
 
   .stage img {
-    height: 145px;
+    height: auto;
+    flex: none;
+    aspect-ratio: 1.7;
     border-radius: 12px;
+  }
+
+  .stageBody {
+    gap: 16px;
   }
 
   .stageBody h3 {
     font-size: 30px;
   }
 
-  .stageBody p {
-    margin-top: 16px;
+  .stageBody p,
+  .stageWideCopy .stageBody p {
+    max-width: none;
   }
 
   .stageMeta {
-    right: 48px;
-    bottom: 38px;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    align-items: center;
+    gap: 10px;
   }
 }
 
 @media (max-width: 767.98px) {
   .services {
-    min-height: auto;
+    height: auto;
     padding: 60px 0 30px;
     background: #e3e4d4;
     color: #04303b;
@@ -224,9 +306,13 @@
     color: #04303b;
   }
 
+  .mobileIntro .eyebrow {
+    margin: 0 auto;
+  }
+
   .mobileIntro h2 {
     max-width: 350px;
-    margin-top: 16px;
+    margin: 16px auto 0;
     font-size: 36px;
     line-height: 1.2;
   }
@@ -238,9 +324,9 @@
   .mobileStage {
     margin: 0 20px 24px;
     padding: 12px 12px 24px;
+    border: 0;
     border-radius: 20px;
     background: #e3e4d4;
-    border: 0;
   }
 
   .mobileStage img {
@@ -253,9 +339,9 @@
   }
 
   .mobileStageBody {
-  padding: 24px 0 0;
-  text-align: center;
-}
+    padding: 24px 0 0;
+    text-align: center;
+  }
 
   .mobileStageBody h3 {
     margin: 0;

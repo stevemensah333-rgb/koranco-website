@@ -12,8 +12,6 @@ const backgroundImages = [
   "/assets/images/znwoT9yqd0qIIlVsLEnXZRi3zU.png",
 ] as const
 
-const serviceImagePositions = ["50% 52%", "50% 56%", "50% 42%", "50% 50%", "50% 58%"] as const
-
 function ServiceHeading() {
   return (
     <h2>
@@ -69,24 +67,35 @@ export function ServicesSection() {
           ))}
         </div>
         <div className={styles.scrim} />
-        <div className={styles.desktopIntro}>
-          <p className={styles.eyebrow}>{siteContent.services.eyebrow}</p>
-          <ServiceHeading />
-        </div>
-        <div className={styles.stageCard}>
-          {siteContent.services.stages.map((stage, index) => (
-            <article className={`${styles.stage} ${index === activeIndex ? styles.active : ""}`} key={stage.title}>
-              <img alt="" src={stage.image} style={{ objectPosition: serviceImagePositions[index] }} />
-              <div className={styles.stageBody}>
-                <h3>{stage.title}</h3>
-                <p>{stage.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className={styles.stageMeta}>
-          <span>{String(activeIndex + 1).padStart(2, "0")}/05</span>
-          <span>[ Keep Scrolling ]</span>
+        <div className={styles.desktopContent}>
+          <div
+            className={`${styles.desktopIntro} ${activeIndex < 2 ? styles.desktopIntroCompact : ""}`}
+          >
+            <p className={styles.eyebrow}>{siteContent.services.eyebrow}</p>
+            <ServiceHeading />
+          </div>
+          <div className={styles.stagePresentation}>
+            <div
+              className={`${styles.stageCard} ${activeIndex === 0 ? styles.stageCardCompact : ""}`}
+            >
+              {siteContent.services.stages.map((stage, index) => (
+                <article
+                  className={`${styles.stage} ${index >= 2 ? styles.stageWideCopy : ""} ${index === activeIndex ? styles.active : ""}`}
+                  key={stage.title}
+                >
+                  <img alt="" src={stage.image} />
+                  <div className={styles.stageBody}>
+                    <h3>{stage.title}</h3>
+                    <p>{stage.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className={styles.stageMeta}>
+              <span>{String(activeIndex + 1).padStart(2, "0")}/05</span>
+              <span>[ Keep Scrolling ]</span>
+            </div>
+          </div>
         </div>
       </div>
 
