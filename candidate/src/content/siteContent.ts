@@ -15,6 +15,17 @@ export const siteContent = {
     contactLabel: "Contact us",
     mobileContactLabel: "Contact Us",
   },
+  about: {
+    eyebrow: "About Us",
+    statement:
+      "Powering the future of agriculture through innovation powering the future of agriculture",
+    stats: [
+      { value: "12+", label: "Years of experience" },
+      { value: "235K+", label: "Acres Improved" },
+      { value: "421K+", label: "Farmer around world" },
+      { value: "$12B+", label: "Agricultural product" },
+    ],
+  },
   hero: {
     eyebrow: "Smart farming solutions",
     title: "Innovative Technology for Agricultural Growth",

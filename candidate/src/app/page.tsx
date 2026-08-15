@@ -1,4 +1,5 @@
 import { Hero } from "../components/hero/Hero"
+import { AboutSection } from "../components/about-section/AboutSection"
 import { SiteHeader } from "../components/site-header/SiteHeader"
 
 const legacyBaseUrl =
@@ -9,6 +10,7 @@ export default function HomePage() {
     <main className="migration-page">
       <SiteHeader legacyBaseUrl={legacyBaseUrl} />
       <Hero legacyBaseUrl={legacyBaseUrl} />
+      <AboutSection />
     </main>
   )
 }
