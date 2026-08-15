@@ -1,0 +1,102 @@
+.gallery {
+  height: 1097.406px;
+  overflow: hidden;
+  background: #e3e4d4;
+  color: #04303b;
+  padding: 120px 0 26px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #04303b;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.intro h2 {
+  width: 625px;
+  max-width: 625px;
+  margin: 20px auto 0;
+  color: #04303b;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -.065em;
+  line-height: 1.2;
+}
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 92px;
+}
+
+.column {
+  min-width: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.column:nth-child(3) .image {
+  height: 52.1527778vw;
+  object-fit: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .gallery {
+    height: 791.234px;
+    padding: 80px 0;
+  }
+
+  .intro h2 {
+    width: 625px;
+    max-width: 625px;
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .masonry {
+    margin-top: 86px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .gallery {
+    height: 657.734px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gallery {
+    height: 467.797px;
+    padding: 60px 0 30px;
+  }
+
+  .intro {
+    padding: 0 20px;
+  }
+
+  .intro h2 {
+    width: 350px;
+    max-width: 350px;
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .masonry {
+    margin-top: 80px;
+  }
+}

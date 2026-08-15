@@ -95,6 +95,27 @@ export const siteContent = {
       },
     ],
   },
+  gallery: {
+    eyebrow: "Our gallery",
+    title: "Inside our farming world",
+    columns: [
+      [
+        { src: "/assets/images/oYXjemMnzb9vtQvXsP0V7SX4Dk.png", alt: "Gallery Image" },
+        { src: "/assets/images/7XKnGc026abQfYS8j1Rdxn5RRU.png", alt: "Gallery Image" },
+      ],
+      [
+        { src: "/assets/images/6gwj2IyXc941vE8Zxy3orojMs.png", alt: "Gallery Image" },
+        { src: "/assets/images/w6fqwux0gdSLbPtHpejYUgu8haA.png", alt: "Gallery Image" },
+      ],
+      [
+        { src: "/assets/images/DSmJZc0j65RxDJDSPJ8HYpBPCQA.png", alt: "Gallery Image" },
+      ],
+      [
+        { src: "/assets/images/XVYKmKt8ypTr26u52MgZ2TID8.png", alt: "Gallery Image" },
+        { src: "/assets/images/DLRQ9dumihhqI477xE98hEDJwV4.png", alt: "Gallery Image" },
+      ],
+    ],
+  },
   hero: {
     eyebrow: "Smart farming solutions",
     title: "Innovative Technology for Agricultural Growth",
