@@ -26,6 +26,18 @@ export const siteContent = {
       { value: "$12B+", label: "Agricultural product" },
     ],
   },
+  contact: {
+    eyebrow: "Join us",
+    title: "Ready to transform your farming with smart technology?",
+    ctaLabel: "Ger started",
+    backgroundImage: "/assets/images/w8BxcgOTdrnm1oAx9APIWHAr7Y.png",
+    statement: "Transforming agriculture through smart, sustainable innovation.",
+    email: "info@korancofarms.com",
+    quickLinks: ["Home", "About us", "Our solutions", "Our services"],
+    navigationLinks: ["Our team", "Testimonial", "Faqs", "Contact us"],
+    socials: ["Facebook", "Instagram", "Threads", "Pinterest"],
+    copyright: "© 2026 Koranco Farms. All Rights Reserved.",
+  },
   products: {
     eyebrow: "Our solutions",
     title: "One platform complete agriculture solutions",

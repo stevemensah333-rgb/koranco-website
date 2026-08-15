@@ -1,0 +1,196 @@
+.contact {
+  position: relative;
+  min-height: 980px;
+  overflow: hidden;
+  padding: 84px 30px 60px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.contact::before {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 18, 18, .72);
+  content: "";
+}
+
+.ctaBlock,
+.footerCard {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaBlock {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.ctaBlock h2 {
+  max-width: 760px;
+  margin: 22px auto 0;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -.065em;
+  line-height: 1.08;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  padding: 13px 21px;
+  border-radius: 999px;
+  background: #e7f352;
+  color: #16353a;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.cta span {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.footerCard {
+  max-width: 1380px;
+  min-height: 408px;
+  margin: 80px auto 0;
+  padding: 52px 48px 28px;
+  border-radius: 22px;
+  background: #fff;
+  color: #16353a;
+}
+
+.footerMain {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr 1fr .7fr;
+  gap: 50px;
+}
+
+.brandColumn img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brandColumn p {
+  max-width: 330px;
+  margin: 22px 0 18px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.email {
+  color: #3b3939;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.column h3 {
+  margin: 0 0 21px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.column ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.column a {
+  color: #3b3939;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 55px;
+  padding-top: 15px;
+  border-top: 1px solid #b7c5c2;
+  color: #3b3939;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    min-height: 1320px;
+    padding: 36px 20px 42px;
+  }
+
+  .ctaBlock h2 {
+    max-width: 350px;
+    margin-top: 15px;
+    font-size: 40px;
+    line-height: 1.08;
+  }
+
+  .cta {
+    margin-top: 28px;
+  }
+
+  .footerCard {
+    min-height: 880px;
+    margin-top: 50px;
+    padding: 30px 20px 24px;
+    border-radius: 16px;
+  }
+
+  .footerMain {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 25px;
+  }
+
+  .brandColumn {
+    grid-column: 1 / -1;
+  }
+
+  .brandColumn img {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 22px;
+  }
+
+  .brandColumn p {
+    max-width: none;
+    margin: 0 0 18px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .column h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .column ul {
+    gap: 14px;
+  }
+
+  .column a,
+  .email {
+    font-size: 18px;
+  }
+
+  .footerMain .column:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .copyright {
+    margin-top: 42px;
+    font-size: 14px;
+  }
+}
