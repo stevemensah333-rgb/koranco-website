@@ -95,6 +95,30 @@ export const siteContent = {
       },
     ],
   },
+  team: {
+    eyebrow: "Our team",
+    title: "Our team members",
+    members: [
+      {
+        name: "Sarah Wilson",
+        role: "Chief Executive Officer (CEO)",
+        alt: "Sarah Wilson",
+        image: "/assets/images/tUo1rL436kuG7vtydKbnapPdR4A.png",
+      },
+      {
+        name: "Michael Brown",
+        role: "Head of Agricultural",
+        alt: "Michael Brown",
+        image: "/assets/images/O2xOHPRp2AADEUZgV6DsLAR97k.png",
+      },
+      {
+        name: "John Carter",
+        role: "Chief Technology Officer",
+        alt: "John Carter",
+        image: "/assets/images/pBNrv3GP1QZlbk4tGkRlMMLbT0.png",
+      },
+    ],
+  },
   gallery: {
     eyebrow: "Our gallery",
     title: "Inside our farming world",

@@ -1,0 +1,167 @@
+.team {
+  height: 878.406px;
+  overflow: hidden;
+  background: #e3e4d4;
+  color: #04303b;
+  padding: 60px 60px 120px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #04303b;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.intro h2 {
+  width: 100%;
+  margin: 20px 0 0;
+  color: #04303b;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: -.065em;
+  line-height: 1.2;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 52px;
+}
+
+.member {
+  min-width: 0;
+  position: relative;
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.details {
+  position: relative;
+  z-index: 1;
+  margin: -64px 34px 0;
+  opacity: 0;
+}
+
+.details h3 {
+  margin: 0;
+  color: #04303b;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.2;
+}
+
+.details p {
+  margin: 16px 0 0;
+  color: #3b3939;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1199.98px) {
+  .team {
+    height: 1460.609px;
+    padding: 40px 30px 80px;
+  }
+
+  .intro h2 {
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 698.685px;
+    margin-top: 46px;
+    row-gap: 24px;
+  }
+
+  .details {
+    margin-top: -62px;
+  }
+
+  .member:nth-child(3) .portrait {
+    height: 451.739px;
+    object-fit: cover;
+  }
+
+  .member:nth-child(3) .details {
+    margin-top: -47.5px;
+  }
+
+  .details h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .team {
+    height: 1139.422px;
+  }
+
+  .members {
+    grid-auto-rows: 519.306px;
+  }
+
+  .member:nth-child(3) .portrait {
+    height: 328.717px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team {
+    height: 1586.625px;
+    padding: 30px 20px 60px;
+  }
+
+  .members {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+    margin-top: 40px;
+    row-gap: 24px;
+  }
+
+  .member:first-child {
+    height: 530.51px;
+  }
+
+  .member:nth-child(n + 2) {
+    height: 439.141px;
+  }
+
+  .member:nth-child(n + 2) .portrait {
+    height: 336.401px;
+    object-fit: cover;
+  }
+
+  .details {
+    margin: -45.65px 34px 0;
+  }
+
+  .member:first-child .details {
+    margin-top: -59.6px;
+  }
+
+  .details h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
