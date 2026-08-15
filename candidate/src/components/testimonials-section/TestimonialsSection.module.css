@@ -59,6 +59,7 @@
   gap: 24px;
   width: max-content;
   transform: translateX(-732.578px);
+  transition: transform .65s cubic-bezier(.77, 0, .175, 1);
 }
 
 .card {
@@ -161,7 +162,11 @@
   opacity: .65;
 }
 
-.dot:first-child span {
+  .dot:first-child span {
+  opacity: .65;
+}
+
+.dot[aria-current="true"] span {
   opacity: 1;
 }
 
