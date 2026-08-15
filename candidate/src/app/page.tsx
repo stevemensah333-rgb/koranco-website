@@ -5,6 +5,7 @@ import { GallerySection } from "../components/gallery-section/GallerySection"
 import { ProductsSection } from "../components/products-section/ProductsSection"
 import { ServicesSection } from "../components/services-section/ServicesSection"
 import { TeamSection } from "../components/team-section/TeamSection"
+import { TestimonialsSection } from "../components/testimonials-section/TestimonialsSection"
 import { SiteHeader } from "../components/site-header/SiteHeader"
 
 const legacyBaseUrl =
@@ -20,6 +21,7 @@ export default function HomePage() {
       <ServicesSection />
       <GallerySection />
       <TeamSection />
+      <TestimonialsSection />
       <ContactSection />
     </main>
   )
