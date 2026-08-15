@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: siteContent.seo.icon, type: "image/svg+xml" },
+      { url: siteContent.seo.iconIco, type: "image/x-icon" },
+      { url: siteContent.seo.icon, sizes: "64x64", type: "image/png" },
+      { url: siteContent.seo.iconSvg, type: "image/svg+xml" },
       { url: siteContent.seo.icon32, sizes: "32x32", type: "image/png" },
       { url: siteContent.seo.icon16, sizes: "16x16", type: "image/png" },
     ],

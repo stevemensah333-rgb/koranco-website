@@ -12,7 +12,7 @@ const backgroundImages = [
   "/assets/images/znwoT9yqd0qIIlVsLEnXZRi3zU.png",
 ] as const
 
-const serviceImagePositions = ["50% 42%", "50% 44%", "50% 48%", "50% 50%", "50% 42%"] as const
+const serviceImagePositions = ["50% 52%", "50% 56%", "50% 42%", "50% 50%", "50% 58%"] as const
 
 function ServiceHeading() {
   return (
