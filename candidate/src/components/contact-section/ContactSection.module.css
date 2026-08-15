@@ -42,7 +42,7 @@
 
 .ctaBlock h2 {
   max-width: 738px;
-  margin: -20px auto 0;
+  margin: 20px auto 0;
   font-size: 52px;
   font-weight: 1000;
   letter-spacing: -.06em;
@@ -56,7 +56,7 @@
   gap: 10px;
   width: 152.484375px;
   height: 43.59375px;
-  margin-top: 64px;
+  margin-top: 24px;
   box-sizing: border-box;
   border-radius: 42px;
   background: #e7f352;
@@ -162,13 +162,12 @@
 
   .ctaBlock h2 {
     max-width: 550px;
-    margin-top: -20px;
     font-size: 36px;
     line-height: 1.2;
   }
 
   .cta {
-    margin-top: 64px;
+    margin-top: 24px;
   }
 
   .footerCard {
@@ -205,13 +204,13 @@
   .ctaBlock h2 {
     width: 100%;
     max-width: 350px;
-    margin-top: -24px;
+    margin-top: 16px;
     font-size: 36px;
     line-height: 1.2;
   }
 
   .cta {
-    margin-top: 64px;
+    margin-top: 24px;
   }
 
   .footerCard {
