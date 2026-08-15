@@ -26,6 +26,37 @@ export const siteContent = {
       { value: "$12B+", label: "Agricultural product" },
     ],
   },
+  services: {
+    eyebrow: "Our services",
+    title: "Advanced Services for Modern Agriculture",
+    stages: [
+      {
+        title: "Agriculture consulting",
+        description: "Smart, sustainable farming guidance tailored to your needs.",
+        image: "/assets/images/zlRjhLi53i0xqjhzJz7TQPnCzV0.png",
+      },
+      {
+        title: "Agri-Technology integration",
+        description: "Implementing smart tools and IoT-driven dashboards for real-time farming.",
+        image: "/assets/images/TsnDBzzzDviYNEHVue597g4xp0.png",
+      },
+      {
+        title: "Farm management services",
+        description: "Comprehensive farm planning, monitoring, and performance reporting for maximum efficiency.",
+        image: "/assets/images/d8hLyjPBxNCMTBDy3uIC2eWPnSg.png",
+      },
+      {
+        title: "Supply chain & market access",
+        description: "Helping farmers connect with buyers, suppliers, and global agriculture markets seamlessly.",
+        image: "/assets/images/SNtFJxxzgJop82HUzYYKfGTeE.png",
+      },
+      {
+        title: "Training & support",
+        description: "Farmer education programs, workshops, and 24/7 technical support for continuous growth.",
+        image: "/assets/images/Rvme5hRNyk19wmGXNRlgBXRlcg.png",
+      },
+    ],
+  },
   hero: {
     eyebrow: "Smart farming solutions",
     title: "Innovative Technology for Agricultural Growth",
