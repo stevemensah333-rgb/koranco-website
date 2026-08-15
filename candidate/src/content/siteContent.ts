@@ -121,7 +121,7 @@ export const siteContent = {
   },
   testimonials: {
     eyebrow: "Testimonials",
-    title: "What farmers say about Koranco Farms",
+    title: "What our customers say about us",
     description: "Real experiences from farmers who trust Koranco Farms to improve their farms and harvests.",
     cards: [
       {
