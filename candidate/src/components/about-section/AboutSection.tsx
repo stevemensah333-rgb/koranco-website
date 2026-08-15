@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { siteContent } from "../../content/siteContent"
 import styles from "./AboutSection.module.css"
 
@@ -13,11 +14,13 @@ export function AboutSection() {
 
       <dl className={styles.stats}>
         {siteContent.about.stats.map((stat, index) => (
-          <div className={styles.stat} key={stat.label}>
-            {index > 0 ? <span aria-hidden="true" className={styles.separator} /> : null}
-            <dt className={styles.value}>{stat.value}</dt>
-            <dd className={styles.label}>{stat.label}</dd>
-          </div>
+          <Fragment key={stat.label}>
+            {index > 0 ? <div aria-hidden="true" className={styles.separator} /> : null}
+            <div className={styles.stat}>
+              <dt className={styles.value}>{stat.value}</dt>
+              <dd className={styles.label}>{stat.label}</dd>
+            </div>
+          </Fragment>
         ))}
       </dl>
     </section>
