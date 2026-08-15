@@ -39,7 +39,7 @@ export function SiteHeader() {
               alt={siteContent.brand.logoAlt}
               className={styles.logo}
               height="695"
-              src="/assets/images/wuQr8zED6pERTtGdsItynbUjr0.jpg"
+              src="/assets/images/koranco-farms-logo.jpg"
               width="695"
             />
           </a>
