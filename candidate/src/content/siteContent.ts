@@ -190,11 +190,7 @@ export const siteContent = {
     title: "Koranco Farms",
     description:
       "Koranco Farms delivers smart, sustainable farming solutions that improve productivity and strengthen agricultural growth.",
-    icon: "/assets/images/koranco-farms-favicon-64.png",
-    iconSvg: "/assets/images/koranco-farms-favicon.svg",
-    iconIco: "/assets/images/koranco-farms-favicon.ico",
-    icon32: "/assets/images/koranco-farms-favicon-32.png",
-    icon16: "/assets/images/koranco-farms-favicon-16.png",
+    icon: "/assets/images/koranco-farms-favicon.svg",
     appleTouchIcon: "/assets/images/koranco-farms-apple-touch-icon.png",
   },
 } as const

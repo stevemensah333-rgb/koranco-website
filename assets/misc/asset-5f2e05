@@ -10,8 +10,7 @@
     <meta name="description" content="Koranco Farms delivers smart, sustainable farming solutions that improve productivity and strengthen agricultural growth.">
     <meta name="framer-search-index" content="https://framerusercontent.com/sites/56D4XHW8h75BsPHv4vcDGL/searchIndex-sW7pMw8QgawO.json">
     <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/56D4XHW8h75BsPHv4vcDGL/searchIndex-uXjtQ8ljbn7j.json">
-    <link href="../images/koranco-farms-favicon.svg" rel="icon" type="image/svg+xml">
-    <link href="../images/koranco-farms-favicon.ico" rel="alternate icon">
+    <link href="../images/koranco-farms-favicon.svg" rel="icon" type="image/svg+xml" sizes="any">
     <link rel="apple-touch-icon" href="../images/koranco-farms-apple-touch-icon.png">
     <!-- Open Graph -->
     <meta property="og:type" content="website">

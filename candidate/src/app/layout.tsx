@@ -26,13 +26,7 @@ export const metadata: Metadata = {
     description: siteContent.seo.description,
   },
   icons: {
-    icon: [
-      { url: siteContent.seo.iconIco, type: "image/x-icon" },
-      { url: siteContent.seo.icon, sizes: "64x64", type: "image/png" },
-      { url: siteContent.seo.iconSvg, type: "image/svg+xml" },
-      { url: siteContent.seo.icon32, sizes: "32x32", type: "image/png" },
-      { url: siteContent.seo.icon16, sizes: "16x16", type: "image/png" },
-    ],
+    icon: [{ url: siteContent.seo.icon, sizes: "any", type: "image/svg+xml" }],
     apple: siteContent.seo.appleTouchIcon,
   },
 }
